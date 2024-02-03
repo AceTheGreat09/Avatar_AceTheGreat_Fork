@@ -26,7 +26,7 @@ def get_drone_action(action):
         tello.connect()
         print("tello.connect()")
     elif action == 'backward':
-        tello.move_back(30)
+        tello.move_back(101)
         print('tello.move_back(30)')
     elif action == 'down':
         tello.move_down(30)
@@ -53,7 +53,7 @@ def get_drone_action(action):
         tello.rotate_counter_clockwise(45)
         print('tello.rotate_counter_clockwise(45)')
     elif action == 'turn_right':
-        tello.rotate_clockwise(45)
+        tello.rotate_clockwise(20)
         print('tello.rotate_clockwise(45)')
     elif action == 'flip':
         tello.flip_back()
